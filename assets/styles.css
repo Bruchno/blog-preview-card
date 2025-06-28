@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Figtree'; 
+  src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('ttf'), 
+       url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('ttf'); 
+}
+body {
+    background-color: #f4d04e;
+    font-family: 'Figtree' , sans-serif;
+    @media (min-width: 48rem) { 
+        overflow: auto;
+    }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+.main {
+  background-color: #ffffff;
+  border-radius: 20px;
+  max-width: 384px; 
+  max-height: 522px;
+  padding: 1.2em; 
+  border: #1e1e1e solid 1px;
+  box-shadow: 5px 5px 0 0 #1e1e1e;
+  margin: 1em;
+}
+.img img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.batton {
+    padding: 1em 0;
+}
+
+.batton-btn {
+    background-color: #f4d04e;
+    color: #1e1e1e;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.cart-date {
+    color: #111;
+    font-size: 0.9em;
+}
+.cart-title {
+    color: #f4d04e;
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+.short-text {
+    color: #6b6b6b;
+    max-width: initial;
+}
+.author {
+    color: #111;
+    font-weight: bold;
+    
+    display: flex;
+}
+.author-name {
+    font-size: 1.2em;
+    margin-left: 0.5em;
+}
+@media (max-width: 48em) {
+  .cart-title {
+    color: #1e1e1e;
+    font-size: 1.2em;
+  }
+}
